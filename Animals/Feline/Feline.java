@@ -4,6 +4,7 @@ import Animals.Animal;
 
 public class Feline extends Animal
 {
+    // polymorphism: override the sleep function
     public void sleep()
     {
         int rand = (int) ((Math.random() * (100 - 1)) + 1);
@@ -20,6 +21,7 @@ public class Feline extends Animal
         }
         else
         {
+            // call original sleep function
             super.sleep();
         }
     }

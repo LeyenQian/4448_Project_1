@@ -16,6 +16,7 @@ public class Zoo
         return this.type;
     }
 
+    // store only animal instance
     public void add_animal(Animal animal)
     {
         if ( !(animal instanceof Animal) )
@@ -34,6 +35,7 @@ public class Zoo
         System.out.println(String.format("#[Zoo] add animal <name: %s> <type: %s> succeed.", animal.get_name(), animal.get_type()));
     }
 
+    // store only exployee instance
     public void add_employee(ZooEmployee employee)
     {
         if ( !(employee instanceof ZooEmployee) )

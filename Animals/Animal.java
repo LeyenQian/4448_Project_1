@@ -1,8 +1,11 @@
 package Animals;
 
 
+// we set Animal as an abstract class, all other class like <Canine> or <Cat> shall extends this class.
+// Abstraction and polymorphism are highly related, we may consider those subclasses are the implementation of polymorphism.
 public abstract class Animal
 {
+    // encapsulation: type and name are only visible to subclass, other classes can only gain access through getter and setter functions.
     protected String type = this.getClass().getSimpleName();
     protected String name;
 
@@ -28,6 +31,7 @@ public abstract class Animal
         return this.name;
     }
 
+    // all animals share some behaviors in common.
     public void wake_up()
     {
         System.out.println(String.format("#[%s] %s wakes up.", this.type, this.name));

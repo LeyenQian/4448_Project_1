@@ -6,7 +6,7 @@ public abstract class ZooEmployee {
     protected String name;
     protected int identity;
 
-
+    // encapsulation: create getter and setter functions as following
     public String get_type()
     {
         return this.type;

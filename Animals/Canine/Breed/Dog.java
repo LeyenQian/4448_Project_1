@@ -4,11 +4,13 @@ import Animals.Canine.Canine;
 
 public class Dog extends Canine
 {
+    // polymorphism: add more function
     public void dig()
     {
-        System.out.println(String.format("#[%s] %s digs.", this.getClass().getSimpleName(), this.name));
+        System.out.println(String.format("#[%s] %s digs.", this.type, this.name));
     }
 
+    // polymorphism: override the roam function
     public void roam()
     {
         int rand = (int) ((Math.random() * (100 - 1)) + 1);
@@ -18,6 +20,7 @@ public class Dog extends Canine
             return;
         }
 
+        // call the original roam function
         super.roam();
     }
 }

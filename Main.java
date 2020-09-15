@@ -1,3 +1,4 @@
+import java.util.Scanner;
 import Animals.Animal;
 import Animals.Canine.Breed.*;
 import Animals.Feline.Breed.*;
@@ -9,8 +10,22 @@ import Zoo.Employee.Type.Zookeeper;
 
 public class Main
 {
+    // identity is just the reference number or the memory address of a specific instance
+    // different instances shall have different identity
+    // instances like zoo_keeper, dog, wolf... are the examples
+
+    // name assign shall be sperate from the constructor
+    // because there is a constraint on the initial
+    // it is not a good idea to resolve error in the constructor
+    
     public static void main(String[] args)
     {
+        // ask user to input a number
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter number of days: ");
+        int days = scan.nextInt();
+        scan.close();
+
         System.out.println("\n\n----------------------------------------- Zoo Beg -----------------------------------------");
 
         // Employee
@@ -60,7 +75,7 @@ public class Main
         zoo.add_animal(panda);
         zoo.add_animal(polar_bear);
 
-        zoo_keeper.visit_zoo(zoo, 2);
+        zoo_keeper.visit_zoo(zoo, days);
 
         System.out.println("----------------------------------------- Zoo End -----------------------------------------\n\n");
     }
