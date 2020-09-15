@@ -1,5 +1,6 @@
 package Animals;
 
+
 public abstract class Animal
 {
     protected String type = this.getClass().getSimpleName();

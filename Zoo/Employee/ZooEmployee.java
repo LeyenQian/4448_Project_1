@@ -1,5 +1,6 @@
 package Zoo.Employee;
 
+
 public abstract class ZooEmployee {
     protected String type = this.getClass().getSimpleName();
     protected String name;

@@ -1,6 +1,7 @@
 package Animals.Feline;
 import Animals.Animal;
 
+
 public class Feline extends Animal
 {
     public void sleep()
