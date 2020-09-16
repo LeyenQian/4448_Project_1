@@ -19,3 +19,6 @@ the abstract class inherited by all beast divisions (Canine, Feline, Pachyderm a
 ( ./Animals/Feline/Breed/* )</br>
 ( ./Animals/Pachyderm.Breed/* )</br>
 ( ./Animals/Ursidae/Breed/* )</br>
+
+### Issue
+It would be better to implement the random animal behavoirs by using the weighted random selection algorithm. But I found Java's design priciple on dictionary or key value pair are different than that in Python or C. Therefore, I choose to implement it with the random number function.
