@@ -9,7 +9,7 @@ public class Feline extends Animal
         super(name);
     }
 
-    // polymorphism: override the sleep function
+    // polymorphism: override the sleep method
     public void sleep()
     {
         int rand = (int) ((Math.random() * (100 - 1)) + 1);
@@ -26,7 +26,7 @@ public class Feline extends Animal
         }
         else
         {
-            // call original sleep function
+            // call original sleep method
             super.sleep();
         }
     }

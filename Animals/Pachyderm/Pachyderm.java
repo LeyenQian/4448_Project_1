@@ -9,13 +9,13 @@ public class Pachyderm extends Animal
         super(name);
     }
     
-    // polymorphism: add more function in addition to the functions inherit from Animal class
+    // polymorphism: add more methods in addition to the methods inherit from Animal class
     public void charge()
     {
         System.out.println(String.format("#[%s] %s charges.", this.type, this.name));
     }
 
-    // polymorphism: override the roam function in the second level subclasss
+    // polymorphism: override the roam method in the second level subclasss
     public void roam()
     {
         int rand = (int) ((Math.random() * (100 - 1)) + 1);
