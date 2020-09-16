@@ -12,18 +12,18 @@ the entry point of the program.</br>
 sample output (number of days: 7)</br>
 
 3. Animal.java ( ./Animals/Animal.java )</br>
-the abstract class inherited by all beast divisions (Canine, Feline, Pachyderm and Ursidae).</br>
+the abstract class inherited by all beast divisions (Canine, Feline, Pachyderm and Ursidae).
 
 4. Canine, Feline, Pachyderm and Ursidae classes are inherited by animal speces under the breed directory respectively.</br>
 ( ./Animals/Canine/Breed.* )</br>
 ( ./Animals/Feline/Breed/* )</br>
 ( ./Animals/Pachyderm.Breed/* )</br>
-( ./Animals/Ursidae/Breed/* )</br>
+( ./Animals/Ursidae/Breed/* )
 
 5. Zoo.java ( ./Zoo/Zoo.java )</br>
 zoo class can store all employee and animal instances.
 
-6. ZooKeeper.java ( ./Zoo/Employee/Zookeeper.java )
+6. ZooKeeper.java ( ./Zoo/Employee/Zookeeper.java )</br>
 It inherites the ZooEmployee class from the partent dictory, and provides additional function that specific to zoo keeper, such as feed animals and roll call animals.
 
 ### Issue
