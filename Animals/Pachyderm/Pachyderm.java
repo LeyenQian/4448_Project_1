@@ -4,6 +4,11 @@ import Animals.Animal;
 
 public class Pachyderm extends Animal
 {
+    public Pachyderm(String name)
+    {
+        super(name);
+    }
+    
     // polymorphism: add more function in addition to the functions inherit from Animal class
     public void charge()
     {

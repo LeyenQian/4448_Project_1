@@ -4,6 +4,11 @@ import Animals.Animal;
 
 public class Feline extends Animal
 {
+    public Feline(String name)
+    {
+        super(name);
+    }
+
     // polymorphism: override the sleep function
     public void sleep()
     {

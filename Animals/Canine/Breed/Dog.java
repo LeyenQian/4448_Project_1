@@ -4,6 +4,11 @@ import Animals.Canine.Canine;
 
 public class Dog extends Canine
 {
+    public Dog(String name)
+    {
+        super(name);
+    }
+    
     // polymorphism: add more function
     public void dig()
     {
