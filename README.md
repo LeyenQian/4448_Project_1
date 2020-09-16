@@ -20,5 +20,11 @@ the abstract class inherited by all beast divisions (Canine, Feline, Pachyderm a
 ( ./Animals/Pachyderm.Breed/* )</br>
 ( ./Animals/Ursidae/Breed/* )</br>
 
+5. Zoo.java ( ./Zoo/Zoo.java )</br>
+zoo class can store all employee and animal instances.
+
+6. ZooKeeper.java ( ./Zoo/Employee/Zookeeper.java )
+It inherites the ZooEmployee class from the partent dictory, and provides additional function that specific to zoo keeper, such as feed animals and roll call animals.
+
 ### Issue
 It would be better to implement the random animal behavoirs by using the weighted random selection algorithm. But I found Java's design priciple on dictionary or key value pair are different than that in Python or C. Therefore, I choose to implement it with the random number function.
